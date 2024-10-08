@@ -23,6 +23,15 @@
         document.write(`Minha existência terá ${minhaexistencia} anos`)
 
 
+        let nome = prompt("Qual é o seu nome?")
+        let alturaInformada = prompt(`${nome}, qual a sua altura?`)
+        let pesoInformado = prompt(`${nome}, poderia informar o seu peso?`)
+        mostrar(`O IMC de ${nome} é: ${IMC(pesoInformado, alturaInformada)}`)
+
+        mostrar(IMC(198, 2.00))
+        
+
+
         
     </script>
 
