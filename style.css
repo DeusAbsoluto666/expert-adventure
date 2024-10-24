@@ -29,7 +29,7 @@ header h1 {
     color: var(--rosa);
 }
 
-header {
+header, footer {
     background-color: var(--dogwood);
     display: flex;
     justify-content: space-between;
@@ -37,4 +37,36 @@ header {
     padding: 12px;
 }
 
+.supremo{
+    padding: 2em;
+    display:flex;
+    flex-direction: columm;
+    align-items: center;
+}
 
+
+.supremo:hover{
+    color: var(--dogwood);
+    font-size: 2px;
+    background-color: ;
+}
+
+.supremo_dois{
+    text-align: center;
+    background-color: var(--dogwood);
+    width: 100%;
+    margin: 1em 0;
+    color: var(--violeta);
+    padding: 1em 0;
+}
+
+.supremo_dois a{
+    text-decoration: none;
+    color: var(--isabelline);
+    font-size: 1px;
+}
+
+footer a {
+    align-items: center;
+    color: var(--isabelline);
+}
