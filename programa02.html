@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa02</title>
+</head>
+<body>
+    <script>
+         function pulalinha(){
+        document.write('<br>')
+       }
+
+       function calculaIMC(altura, peso){
+           return imc = peso / (altura * altura)
+       }
+
+       function mostrar(texto){
+        document.write(texto)
+        pulalinha()
+       }
+
+       let nome = prompt('Qual seu nome?')
+       let alturaInformada = prompt(`${nome} você poderia informar sua altura? (Use . não ,)`)
+       let pesoInformado = prompt(`${nome} Você pdoeria me informar seu peso? (Use . não ,)`)
+
+       mostrar(`O IMC de ${nome} é : ${calculaIMC(alturaInformada, pesoInformado)}`)
+
+       //mostrar(`O imc do Pedro é : ${calculaIMC(1.84, 76)}`)
+
+       if(imc < 18.5){
+        mostrar(`${nome}, seu IMC está abaixo do normal(você está esquelético(a))`)
+       } else if( imc > 25){
+        mostrar(`${nome}, seu IMC está acima do normal(você está barrigudinho(a))`)
+       } else{
+        mostrar(`${nome}, seu IMC está normal`)
+       }
+  
+    </script>
+</body>
+</html>
