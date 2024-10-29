@@ -7,14 +7,13 @@
 }
 
 :root {
-        --espaço: #22223bff;
-        --violeta: #4a4e69ff;MM
-        --rosa: #9a8c98ff;
-        --dogwood: #c9ada7ff;
-        --isabelline: #f2e9e4ff;
-        --fonte-titulo: "Open Sans", sans-serif;
-        --fonte-texto: "DM Sans", sans-serif;
-
+    --espaço: #22223bff;
+    --violeta: #4a4e69ff;
+    --rosa: #9a8c98ff;
+    --dogwood: #c9ada7ff;
+    --isabelline: #f2e9e4ff;
+    --fonte-titulo: "Open Sans", sans-serif;
+    --fonte-texto: "DM Sans", sans-serif;
 }
 
 body {
@@ -40,15 +39,8 @@ header, footer {
 .supremo{
     padding: 2em;
     display:flex;
-    flex-direction: columm;
+    flex-direction: column;
     align-items: center;
-}
-
-
-.supremo:hover{
-    color: var(--dogwood);
-    font-size: 2px;
-    background-color: ;
 }
 
 .supremo_dois{
@@ -58,12 +50,18 @@ header, footer {
     margin: 1em 0;
     color: var(--violeta);
     padding: 1em 0;
+    border-radius: 20px;
 }
 
 .supremo_dois a{
     text-decoration: none;
-    color: var(--isabelline);
-    font-size: 1px;
+    color: var(--espaço);
+    font-size: 14px;
+}
+
+.supremo_dois :hover {
+    color: var(--dogwood);
+    background-color: var(--violeta)
 }
 
 footer a {
